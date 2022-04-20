@@ -1,0 +1,5 @@
+public enum Tipo {
+  ZAPATOS,
+  CAMISA_DE_MANGAS_CORTAS,
+  PANTALON
+}
