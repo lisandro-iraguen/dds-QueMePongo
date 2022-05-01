@@ -59,5 +59,23 @@ public class Prenda {
     return contradicciones.seContradicen(tipo,categoria);
   }
 
+  public Tipo queTipoDePrendaEstoyCargando(){
+    return this.getTipo();
+  }
+  public Categoria aQueCategoríaPerteneceUnaPrenda(){
+    return  this.getCategoria();
+  }
+
+  public void deQueMaterialEstaHechaUnaPrenda(Color colorPrincipal){
+     this.setColorPrincipal(colorPrincipal);
+  }
+
+  public String indicarColorSecudario(){
+    if(this.getColorSecundario()!=null)
+      return this.getColorSecundario().toString();
+    else{
+      return "no existe color secundario";
+    }
+  }
 
 }

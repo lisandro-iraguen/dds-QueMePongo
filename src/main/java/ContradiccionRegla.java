@@ -1,7 +1,7 @@
 public class ContradiccionRegla {
 
   public boolean seContradicen(Tipo tipo, Categoria categoria) {
-    
+
     if(tipo == Tipo.ZAPATOS){
       if(categoria== Categoria.ACCESORIOS) return true;
       if(categoria== Categoria.PARTE_SUPERIOR) return true;
