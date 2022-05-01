@@ -1,10 +1,13 @@
 import java.awt.*;
 
+import static java.util.Objects.requireNonNull;
+
 public class Prenda {
 
-  private Tipo tipo;
+  private TipoDePrenda tipo;
   private Categoria categoria;
   private Material material;
+  private Trama trama;
 
 
 
@@ -12,24 +15,13 @@ public class Prenda {
 
   private Color colorSecundario=null;
 
-  public Prenda(Tipo tipo,Categoria categoria, Material material,Color colorPrincipal){
-    if(tipo == null)
-      throw  new RuntimeException("tiene que seleccionar un tipo no nulo");
-
-    if(categoria == null)
-      throw  new RuntimeException("tiene que seleccionar una categoria no nula");
-
-    if(material == null)
-      throw  new RuntimeException("tiene que seleccionar un material no nulo");
-
-    if(colorPrincipal == null)
-      throw  new RuntimeException("tiene que seleccionar un color principal no nulo");
-
-    if(seContradicen(tipo,categoria)){
-      throw  new RuntimeException("tiene que seleccionar un tipo y una categoria no contradictorios");
-    }
-
+  public Prenda(TipoDePrenda tipo,Categoria categoria, Material material,Color colorPrincipal){
+    this.tipo = requireNonNull(tipo, "tipo de prenda es obligatorio");
+    this.material = requireNonNull(material, "material es obligatorio");
+    this.colorPrincipal = requireNonNull(colorPrincipal, "color es obligatorio");
   }
+
+
   public void setColorPrincipal(Color c){
     colorPrincipal = c;
   }
@@ -42,7 +34,7 @@ public class Prenda {
   public Color getColorSecundario(){
     return colorSecundario;
   }
-  public Tipo getTipo() {
+  public TipoDePrenda getTipo() {
     return tipo;
   }
 
@@ -54,12 +46,9 @@ public class Prenda {
     return material;
   }
 
-  public boolean seContradicen(Tipo tipo, Categoria categoria){
-    ContradiccionRegla contradicciones = new ContradiccionRegla();
-    return contradicciones.seContradicen(tipo,categoria);
-  }
 
-  public Tipo queTipoDePrendaEstoyCargando(){
+
+  public TipoDePrenda queTipoDePrendaEstoyCargando(){
     return this.getTipo();
   }
   public Categoria aQueCategoríaPerteneceUnaPrenda(){
