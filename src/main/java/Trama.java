@@ -1,3 +1,7 @@
-public class Trama {
-  public String tipoDeTrama;
+public enum Trama {
+  RALLADO,
+  LISO,
+  CUADRITOS,
+  LUNARES,
+  ESTAMPADA
 }

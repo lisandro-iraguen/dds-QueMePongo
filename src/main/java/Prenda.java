@@ -37,6 +37,9 @@ public class Prenda {
   public TipoDePrenda getTipo() {
     return tipo;
   }
+  public void setTipoDePrenda(TipoDePrenda t) {
+    tipo=t;
+  }
 
   public Categoria getCategoria() {
     return categoria;
@@ -45,7 +48,9 @@ public class Prenda {
   public Material getMaterial() {
     return material;
   }
-
+  public void setMaterial(Material m) {
+    material=m;
+  }
 
 
   public TipoDePrenda queTipoDePrendaEstoyCargando(){
