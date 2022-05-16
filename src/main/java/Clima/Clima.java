@@ -1,6 +1,6 @@
 package Clima;
 
 public class Clima {
-  public int temperatura;
+  public Integer temperatura;
   public float probablidadDeLLuvia;
 }

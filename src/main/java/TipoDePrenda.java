@@ -30,7 +30,7 @@ public class TipoDePrenda {
     return between(clima.temperatura,temperaturaMinima,tempreaturaMaxima);
   }
 
-  private boolean between(int i, int minValueInclusive, int maxValueInclusive) {
+  private boolean between(float i, float minValueInclusive, float maxValueInclusive) {
     return (i >= minValueInclusive && i <= maxValueInclusive);
   }
 }
