@@ -1,3 +1,5 @@
+import Clima.Clima;
+
 import java.awt.*;
 
 import static java.util.Objects.requireNonNull;
@@ -33,6 +35,7 @@ public class PrendaFactory {
   }
 
 
-
-
+  public boolean sePuedeUsarEn(Clima clima) {
+    return tipoDePrenda.permiteElUsoEn(clima);
+  }
 }
