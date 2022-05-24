@@ -1,3 +1,8 @@
+package Usuario;
+
+import guardarropa.Guardarropa;
+import prenda.*;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -6,6 +11,8 @@ public class Usuarie {
   public List<PrendaFactory> prendaFactoryListSinCompletar = new ArrayList<PrendaFactory>();
   public List<UniformeFactory> prendaFactorySugerencias = new ArrayList<UniformeFactory>();
   public List<Prenda> prendaCompleta = new ArrayList<Prenda>();
+
+  public List<Guardarropa> guardarropas = new ArrayList<>();
 
   public void recibirSugerenciaDePrendasArmadas(UniformeFactory p){
     prendaFactorySugerencias.add(p);
@@ -28,4 +35,9 @@ public class Usuarie {
     prendaFactory.setPrenda(new TipoDePrenda(Categoria.PARTE_INFERIOR,20,25));
     prendaCompleta.add(prendaFactory.crearPrenda());
   }
+
+  public void crearGuardarropa(Usuarie usuarie){
+    guardarropas.add(new Guardarropa(usuarie));
+  }
+
 }

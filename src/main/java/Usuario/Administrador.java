@@ -1,3 +1,7 @@
+package Usuario;
+
+import prenda.UniformeFactory;
+
 import java.util.ArrayList;
 import java.util.List;
 

@@ -1,4 +1,6 @@
-import Clima.Clima;
+package prenda;
+
+import clima.Clima;
 
 public class UniformeFactory {
   private PrendaFactory prendaSuperior;

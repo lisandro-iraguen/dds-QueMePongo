@@ -1,4 +1,6 @@
-import Clima.Clima;
+package prenda;
+
+import clima.Clima;
 
 import java.awt.*;
 

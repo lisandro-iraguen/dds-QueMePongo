@@ -1,4 +1,4 @@
-package Clima;
+package clima;
 
 import org.junit.jupiter.api.Test;
 

@@ -1,4 +1,6 @@
-import Clima.Clima;
+package prenda;
+
+import clima.Clima;
 
 public class TipoDePrenda {
 
@@ -11,7 +13,7 @@ public class TipoDePrenda {
   public static TipoDePrenda PANTALON = new TipoDePrenda(Categoria.PARTE_INFERIOR,20,18);
 
 
-  TipoDePrenda(Categoria categoria, int tMin,int tMax) {
+  public TipoDePrenda(Categoria categoria, int tMin, int tMax) {
 
     this.categoria = categoria;
     this.temperaturaMinima=tMin;

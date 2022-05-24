@@ -1,3 +1,5 @@
+package prenda;
+
 public enum Trama {
   RALLADO,
   LISO,

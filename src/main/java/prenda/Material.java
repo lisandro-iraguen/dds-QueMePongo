@@ -1,3 +1,5 @@
+package prenda;
+
 public class Material {
   public String tipoDeMaterial;
   private Trama trama;
