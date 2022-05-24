@@ -1,6 +1,6 @@
 package guardarropa;
 
-public class Rechazar implements Ordengi{
+public class Rechazar implements Orden{
   private PrendaTentativa prendaTentativa;
 
   public Rechazar(PrendaTentativa prendaTentativa){
